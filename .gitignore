@@ -1,0 +1,72 @@
+# Global ignores
+.DS_Store
+.vscode/
+logs/
+*.pem
+.env*
+__pycache__/
+*.pyc
+
+# Root specific
+full_portal_audit.md.resolved
+DOCUMENTATION.md
+
+# app1-backend
+/app1-backend/model.joblib
+
+# Linear Regression Model Python
+/Linear Regression Model Python/TRAINING_MECHANISM.md
+/Linear Regression Model Python/model.joblib
+/Linear Regression Model Python/venv/
+
+# housing_app (Spring Boot / Gradle)
+/housing_app/HELP.md
+/housing_app/.gradle/
+/housing_app/build/
+!/housing_app/gradle/wrapper/gradle-wrapper.jar
+!/housing_app/**/src/main/**/build/
+!/housing_app/**/src/test/**/build/
+/housing_app/.apt_generated
+/housing_app/.classpath
+/housing_app/.factorypath
+/housing_app/.project
+/housing_app/.settings
+/housing_app/.springBeans
+/housing_app/.sts4-cache
+/housing_app/bin/
+!/housing_app/**/src/main/**/bin/
+!/housing_app/**/src/test/**/bin/
+/housing_app/.idea/
+/housing_app/*.iws
+/housing_app/*.iml
+/housing_app/*.ipr
+/housing_app/out/
+!/housing_app/**/src/main/**/out/
+!/housing_app/**/src/test/**/out/
+/housing_app/nbproject/private/
+/housing_app/nbbuild/
+/housing_app/dist/
+/housing_app/nbdist/
+/housing_app/.nb-gradle/
+
+# housing-portal (Next.js / Node)
+/housing-portal/node_modules/
+/housing-portal/.pnp
+/housing-portal/.pnp.*
+/housing-portal/.yarn/*
+!/housing-portal/.yarn/patches
+!/housing-portal/.yarn/plugins
+!/housing-portal/.yarn/releases
+!/housing-portal/.yarn/versions
+/housing-portal/coverage/
+/housing-portal/.next/
+/housing-portal/out/
+/housing-portal/build/
+/housing-portal/dist/
+/housing-portal/npm-debug.log*
+/housing-portal/yarn-debug.log*
+/housing-portal/yarn-error.log*
+/housing-portal/.pnpm-debug.log*
+/housing-portal/.vercel/
+/housing-portal/*.tsbuildinfo
+/housing-portal/next-env.d.ts
