@@ -15,9 +15,7 @@ DOCUMENTATION.md
 /app1-backend/model.joblib
 
 # Linear Regression Model Python
-/Linear Regression Model Python/TRAINING_MECHANISM.md
-/Linear Regression Model Python/model.joblib
-/Linear Regression Model Python/venv/
+/Linear Regression Model Python/
 
 # housing_app (Spring Boot / Gradle)
 /housing_app/HELP.md
