@@ -1,4 +1,6 @@
-package com.example.housing_app;
+package com.example.housing_app.dto;
+
+
 
 public record PropertyData(
     int id,

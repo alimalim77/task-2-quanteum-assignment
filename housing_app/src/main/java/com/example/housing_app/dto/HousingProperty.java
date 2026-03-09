@@ -1,4 +1,6 @@
-package com.example.housing_app;
+package com.example.housing_app.dto;
+
+
 
 /**
  * Represents a single row from the housing_data.csv dataset.

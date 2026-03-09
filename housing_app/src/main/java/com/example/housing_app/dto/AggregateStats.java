@@ -1,4 +1,6 @@
-package com.example.housing_app;
+package com.example.housing_app.dto;
+
+
 
 import java.util.Map;
 

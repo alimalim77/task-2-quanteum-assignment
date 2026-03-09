@@ -1,4 +1,7 @@
-package com.example.housing_app;
+package com.example.housing_app.config;
+
+import com.example.housing_app.dto.*;
+
 
 import com.github.benmanes.caffeine.cache.Caffeine;
 import org.springframework.cache.CacheManager;

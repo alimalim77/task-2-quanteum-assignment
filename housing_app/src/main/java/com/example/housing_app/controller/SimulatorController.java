@@ -1,4 +1,8 @@
-package com.example.housing_app;
+package com.example.housing_app.controller;
+
+import com.example.housing_app.dto.*;
+import com.example.housing_app.service.*;
+
 
 import org.springframework.web.bind.annotation.*;
 

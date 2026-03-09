@@ -1,4 +1,6 @@
-package com.example.housing_app;
+package com.example.housing_app.dto;
+
+
 
 /**
  * Request body for the ML model prediction proxy.

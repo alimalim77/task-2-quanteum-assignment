@@ -1,4 +1,7 @@
-package com.example.housing_app;
+package com.example.housing_app.service;
+
+import com.example.housing_app.dto.*;
+
 
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.core.io.ClassPathResource;
