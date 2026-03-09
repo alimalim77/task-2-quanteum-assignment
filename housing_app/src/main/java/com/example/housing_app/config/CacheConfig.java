@@ -1,8 +1,5 @@
 package com.example.housing_app.config;
 
-import com.example.housing_app.dto.*;
-
-
 import com.github.benmanes.caffeine.cache.Caffeine;
 import org.springframework.cache.CacheManager;
 import org.springframework.cache.annotation.EnableCaching;
@@ -25,22 +22,22 @@ import java.util.concurrent.TimeUnit;
 @EnableCaching
 public class CacheConfig {
 
-    @Bean
-    public CacheManager cacheManager() {
-        CaffeineCache marketDataCache = new CaffeineCache("marketData",
-                Caffeine.newBuilder().build());
+        @Bean
+        public CacheManager cacheManager() {
+                CaffeineCache marketDataCache = new CaffeineCache("marketData",
+                                Caffeine.newBuilder().build());
 
-        CaffeineCache aggregateStatsCache = new CaffeineCache("aggregateStats",
-                Caffeine.newBuilder().build());
+                CaffeineCache aggregateStatsCache = new CaffeineCache("aggregateStats",
+                                Caffeine.newBuilder().build());
 
-        CaffeineCache mlPredictionsCache = new CaffeineCache("mlPredictions",
-                Caffeine.newBuilder()
-                        .expireAfterWrite(10, TimeUnit.MINUTES)
-                        .maximumSize(500)
-                        .build());
+                CaffeineCache mlPredictionsCache = new CaffeineCache("mlPredictions",
+                                Caffeine.newBuilder()
+                                                .expireAfterWrite(10, TimeUnit.MINUTES)
+                                                .maximumSize(500)
+                                                .build());
 
-        SimpleCacheManager manager = new SimpleCacheManager();
-        manager.setCaches(Arrays.asList(marketDataCache, aggregateStatsCache, mlPredictionsCache));
-        return manager;
-    }
+                SimpleCacheManager manager = new SimpleCacheManager();
+                manager.setCaches(Arrays.asList(marketDataCache, aggregateStatsCache, mlPredictionsCache));
+                return manager;
+        }
 }
